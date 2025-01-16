@@ -1,8 +1,8 @@
 :root {
     --sidebar-color: #CCD5AE;
     --header-color: #FEFAE0;
-    --main-color: #FAEDCD;
     --accent-color: #D4A373;
+    --main-color: #FAEDCD;
 }
 
 html {
@@ -29,7 +29,7 @@ header {
     grid-column: 2 / 3;
 }
 
-sidebar {
+aside {
     background-color: var(--sidebar-color);
     grid-column: 1 / 2;
     grid-row: 1 / -1;
@@ -54,8 +54,7 @@ main {
 }
 
 .sidebar-header img {
-    /*this center the sidebar header svg icon */
-    align-self: center;
+    align-self: center;     /*this center the sidebar header svg icon */
 }
 
 .sidebar-main div {
@@ -66,12 +65,39 @@ main {
 }
 
 .sidebar-main p {
-    /*this aligns the sidebar text with svg icon */
-    align-items: center;
+    align-items: center;        /*this aligns the sidebar text with svg icon */
 }
 
+
+
+/* *********** CSS FOR HEADER ************ */
+.header-top {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    align-items: center;
+    /* justify-items: flex-start; */
+    gap: 10px;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+}
+
+.header-username {}
+
+.header-buttons {}
+
+
+
+
 /* ********** CSS FOR SVG ICONS ********** */
-#icon-head {
+.header-icon {
+    display: block;
+    align-self: center;
+}
+
+.sidebar-icon {
     height: 40px;
     width: 40px;
     display: block;
@@ -82,5 +108,11 @@ main {
     width: 20px;
     display: block;
     align-self: center;
+}
+
+.header-small-icon {
+    height: 30px;
+    width: 30px;
+    display: block;
 }
 
