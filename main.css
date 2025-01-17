@@ -116,6 +116,14 @@ main {
     gap: 30px;
 }
 
+.header-username h5 {
+    margin-bottom: 0;
+}
+
+.header-username h3 {
+    margin-top: 5px;
+}
+
 .headBtn {
     padding: 10px 20px;
     border-radius: 14px;
@@ -137,6 +145,7 @@ main {
 .header-icon {
     display: block;
     align-self: center;
+    padding: 1vh;
 }
 
 .sidebar-icon {
@@ -164,3 +173,10 @@ main {
     display: block;
 }
 
+
+
+@media (max-width: 800px) {
+    .header-bottom {
+        grid-template-rows: auto 1fr 1fr;
+    }
+}
