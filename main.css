@@ -73,19 +73,27 @@ main {
 /* *********** CSS FOR HEADER ************ */
 .header-top {
     display: grid;
-    grid-template-columns: auto fit-content(150px) auto auto auto;
+    grid-template-columns: auto 1fr 1fr;
     align-items: center;
-    /* justify-items: flex-start; */
     gap: 10px;
+    padding: 0px 20px;
+}
+
+.top-header-icons {
+    align-items: center;
+    justify-self: flex-end;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
 }
 
 .header-bottom {
     display: grid;
     grid-template-columns: fit-content(100px) 1fr 1fr;
     gap: 10px;
+    padding: 0px 20px;
 }
-
-.header-username {}
 
 .header-buttons {
     align-self: center;
