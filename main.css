@@ -73,7 +73,7 @@ main {
 /* *********** CSS FOR HEADER ************ */
 .header-top {
     display: grid;
-    grid-template-columns: auto 1fr auto auto auto;
+    grid-template-columns: auto fit-content(150px) auto auto auto;
     align-items: center;
     /* justify-items: flex-start; */
     gap: 10px;
@@ -81,13 +81,34 @@ main {
 
 .header-bottom {
     display: grid;
-    grid-template-columns: auto 1fr 1fr;
+    grid-template-columns: fit-content(100px) 1fr 1fr;
+    gap: 10px;
 }
 
 .header-username {}
 
-.header-buttons {}
+.header-buttons {
+    align-self: center;
+    justify-self: center;
 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.headBtn {
+    padding: 10px 20px;
+    border-radius: 14px;
+    border:none;
+    font-weight: bold;
+    background-color: var(--sidebar-color);
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.headBtn:hover {
+    background-color: var(--accent-color);
+}
 
 
 
