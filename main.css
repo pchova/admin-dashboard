@@ -3,6 +3,7 @@
     --header-color: #FEFAE0;
     --accent-color: #D4A373;
     --main-color: #FAEDCD;
+    --background-white-color: #FEFCF6;
     --system-ui: system-ui, "Segoe UI", "Roboto", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -172,25 +173,59 @@ main {
 }
 
 
-/* ********** CSS FOR MAIN ********** */
+/* ********** CSS FOR MAIN CONTAINER ********** */
 .main-container {
     display: grid;
     grid-template-columns: 1fr 25%;
     gap: 10px;
     padding: 20px;
-
-    border: 1px solid red;
 } 
 
+/* ********** LEFT SIDE MAIN CONTAINER ********* */
 .card-container {
     border: 1px solid green;
 }
 
+.card-container > h4 {
+    margin-bottom: 1px;
+}
+
 .cards {
     border: 1px solid purple;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
 
 }
 
+.notecard {
+    background-color: var(--background-white-color);
+    border-radius: 10px;
+    padding: 20px;
+    border-left: 6px solid goldenrod;
+    display: grid;
+}
+
+.notecard p {
+    margin: 0;
+}
+
+.notecard-title {
+    font-weight: bold;
+}
+
+.notecard-icons {
+    display: grid;
+    grid-template-columns: auto auto auto;  
+    justify-self: end;
+    gap: 13px;
+}
+
+.notecard-icon {
+    height: 30px;
+}
+
+/* ********** RIGHT SIDE MAIN CONTAINER ********* */
 .notifs-container {
     border: 1px solid blue;
     display: grid;
@@ -198,12 +233,13 @@ main {
     gap: 15px;
 }
 
+
 .announcements {
     border: 1px solid orangered;
 }
 
 .announce {
-    background-color: white;
+    background-color: var(--background-white-color);
     border-radius: 10px;
 }
 
@@ -212,7 +248,7 @@ main {
 }
 
 .trends {
-    background-color: white;
+    background-color: var(--background-white-color);
     border-radius: 10px;
 }
 
