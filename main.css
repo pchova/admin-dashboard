@@ -67,6 +67,7 @@ main {
 
 .sidebar-main p {
     align-items: center;        /*this aligns the sidebar text with svg icon */
+    font-weight: bold;
 }
 
 .dashBtn:hover {                /*hover over the sidebar buttons exculding the empty one*/
