@@ -19,7 +19,11 @@ html {
 }
 
 .container {
-    border: 2px solid black;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: auto 1fr;
@@ -183,15 +187,15 @@ main {
 
 /* ********** LEFT SIDE MAIN CONTAINER ********* */
 .card-container {
-    border: 1px solid green;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
-.card-container > h4 {
-    margin-bottom: 1px;
+.card-container h4, .announcements h4, .trending h4 {
+    margin-bottom: 5px;
 }
 
 .cards {
-    border: 1px solid purple;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
@@ -204,6 +208,7 @@ main {
     padding: 20px;
     border-left: 6px solid goldenrod;
     display: grid;
+    align-items: center;
 }
 
 .notecard p {
@@ -227,30 +232,44 @@ main {
 
 /* ********** RIGHT SIDE MAIN CONTAINER ********* */
 .notifs-container {
-    border: 1px solid blue;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     gap: 15px;
-}
-
-
-.announcements {
-    border: 1px solid orangered;
 }
 
 .announce {
     background-color: var(--background-white-color);
     border-radius: 10px;
+    padding: 15px;
 }
 
-.trending {
-    border: 1px solid green;
+.a {
+    border-bottom: 1px solid gray;
+}
+
+.a:last-child {
+    border-bottom: none;
 }
 
 .trends {
     background-color: var(--background-white-color);
     border-radius: 10px;
+    padding: 15px;
 }
 
+.account {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    padding: 10px;
+}
+
+.account-text p {
+    margin: 0;
+}
+
+.account-text > :first-child {
+    font-weight: bold;
+}
 
 
