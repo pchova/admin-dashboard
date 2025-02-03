@@ -51,7 +51,7 @@ main {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .sidebar-header img {
@@ -62,7 +62,7 @@ main {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .sidebar-main p {
@@ -73,7 +73,6 @@ main {
     background-color: var(--accent-color);
     border-radius: 10px;
 }
-
 
 
 /* *********** CSS FOR HEADER ************ */
@@ -194,7 +193,7 @@ main {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 15px;
 
 }
@@ -205,7 +204,12 @@ main {
     padding: 20px;
     border-left: 6px solid goldenrod;
     display: grid;
-    align-items: center;
+    align-items: end;
+}
+
+.notecard-top {
+    display: grid;
+    align-self: baseline;
 }
 
 .notecard p {
@@ -214,7 +218,8 @@ main {
 
 .notecard-title {
     font-weight: bold;
-    margin-bottom: 0px;
+    margin-bottom: 2px;
+    font-size: large;
 }
 
 .notecard-icons {
@@ -250,7 +255,7 @@ main {
 }
 
 .a > p:last-child {
-    font-size: small;
+    font-size: medium;
     margin-top: 0px;
 }
 
