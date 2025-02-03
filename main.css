@@ -189,6 +189,7 @@ main {
 
 .card-container h4, .announcements h4, .trending h4 {
     margin-bottom: 5px;
+    font-size: 20px;
 }
 
 .cards {
