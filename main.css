@@ -51,7 +51,7 @@ main {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .sidebar-header img {
@@ -62,7 +62,7 @@ main {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .sidebar-main p {
@@ -124,11 +124,11 @@ main {
 
 .header-username h3 {
     margin-top: 5px;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .headBtn {
-    padding: 15px 25px;
+    padding: 13px 23px;
     font-size: medium;
     border-radius: 14px;
     border:none;
@@ -193,12 +193,12 @@ main {
 
 .card-container h4, .announcements h4, .trending h4 {
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 15px;
 
 }
